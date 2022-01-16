@@ -47,6 +47,10 @@ body{
     margin-right: 140px;
     margin-left: 80px;
 }
+.camera:hover{
+    transform: rotate(360deg);
+    transition: 2s ease-in-out;
+}
 /* -------------------------------------
 ---------main interface end ------------
 ---------------------------------------- */
@@ -79,6 +83,7 @@ body{
     box-shadow: 10px 10px 40px 20px grey;
     border-radius: 5px;
 }
+
 .collection{
     
     display: flex;
