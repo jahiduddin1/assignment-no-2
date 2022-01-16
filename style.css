@@ -1,0 +1,217 @@
+/* font style  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header-name h3{
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 87px;
+    margin-left: 120px;
+}
+/*--------------------------------------------
+------------- main interface start ----------- 
+----------------------------------------------*/
+.main-interface{
+    display: flex;
+}
+.interface-info{
+    margin-top: 120px;
+    margin-left: 100px;
+}
+.interface-title{
+    font-weight: bold;
+    font-size: 40px;
+}
+.prebook a{
+    text-decoration: none;
+    background-color:#E02C6D ;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 50px 10px 24px;
+    border-radius: 41px;
+}
+.fa-arrow-circle-right{
+    margin-left:15px ;
+}
+.prebook a:hover{
+    background-color:#880c3a ;
+}
+.camera{
+    width: 410px;
+    height: 380px; 
+    margin-top: 80px;
+    margin-right: 140px;
+    margin-left: 80px;
+}
+/* -------------------------------------
+---------main interface end ------------
+---------------------------------------- */
+
+
+/* -------------------------------------------
+-----------collection interface start --- ----
+----------------------------------------------*/
+.main-collections{
+    
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.collection-conteiner{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-top: 100px;
+}
+.collection-title{
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+}
+.collections{
+    
+    width: 329px;
+    height: 476px;
+    box-shadow: 10px 10px 40px 20px grey;
+    border-radius: 5px;
+}
+.collection{
+    
+    display: flex;
+    flex-direction: column;
+}
+.collection img{
+    width: 300px;
+    height: 256px;
+    margin: 14px;
+    border-radius: 5px;
+}
+.collection-info{
+    margin-left: 14px;
+    margin-top: 16px;
+
+}
+.collection-name{ 
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+.collection-price{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 0;
+    margin-top: 6px
+    
+}
+.ratting{
+    display: flex;
+    justify-content: space-between;
+    color: #FB8200;
+    width: 11.07px;
+    height: 10.32px;
+}
+.rate{
+    color: #5E6366 ;
+
+}
+
+.see-more a{
+    text-decoration: none;
+    position: relative;
+    margin-left: 910px;
+    color: #E02C6D    ;
+    top: 33px;
+    
+
+}
+/*------------------------------------------------------
+------------------ collection inteface end -------------
+-------------------------------------------------------- */
+
+/* ----------------------------------------------------
+--------------------footer start-----------------------
+-------------------------------------------------------  */
+.footer-conteiner{
+    background: #0A0826;
+}
+.footer-info{
+    color:#FFFFFF;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 30px;
+}
+.footer-info p{
+    margin: 0;
+    font-size: 14px;
+}
+.footer-title{
+    font-weight: bold;
+    font-size: 24px;
+}
+.icons{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    color: #b6acac ;
+   font-size: 40px;
+}
+.icon{
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+/*----------------------------------------------------
+------------------ footer end -----------------------
+------------------------------------------------------ */
+
+/*-------------------------------
+------ media queri start--------
+----------------------------------  */
+@media (max-width:688px) {
+    .header-name{
+        text-align: center;
+    }
+    .main-interface{
+        flex-direction: column;
+    }
+    .interface-info{
+        width: 100%;
+    }
+    .camera{
+        width: 100%;
+    }
+    .collection-title{
+        text-align: center;
+    }
+    .collection-conteiner{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-conteiner{
+        width: 688px;
+        
+    }
+}
+@media (min-width:689px) and (max-width:992px) {
+    
+    .main-interface{
+        flex-direction: column;
+    }
+    .collection-title{
+        text-align: center;
+    }
+    .collection-conteiner{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-conteiner{
+        width: 1000px;
+    }
+    .see-more{
+        width: 100%;
+    }
+}
